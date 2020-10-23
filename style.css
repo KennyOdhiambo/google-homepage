@@ -1,0 +1,145 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: "about store . gmail images menu sign";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+#about {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+}
+
+#store {
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+}
+
+#gmail {
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+
+#images {
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+}
+
+#menu {
+    grid-area: menu;
+    justify-self: center;
+    align-self: center;
+}
+
+#sign {
+    grid-area: sign;
+    justify-self: center;
+    align-self: center;
+}
+
+#main {
+    /*display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 100px 100px 200px;*/
+    grid-template-areas: ". logo ." ". search ." ". search-btn lucky ." " . google-text .";
+}
+
+#logo {
+    display: flex;
+    grid-area: logo;
+    margin: 10px;
+    margin-left: 40%;
+    align-self: center;
+    margin-top: 150px;
+}
+
+#search {
+    /*grid-area: search;*/
+    height: 40px;
+    width: 500px;
+    border-radius: 20px;
+    margin: 20px;
+    opacity: 0.2;
+    ;
+}
+
+#search-btn {
+    grid-area: search-btn;
+    margin-right: 5px;
+    height: 30px;
+    width: 200px;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+
+#lucky {
+    grid-area: lucky;
+    height: 30px;
+    width: 200px;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+
+#google-text {
+    grid-area: google-text;
+}
+
+#foot {
+    display: grid;
+    grid-template-areas: "advert business How-search privacy terms sett";
+    margin-top: 20%;
+    /*grid-template-columns: 50px 50px 1fr 50px 50px 50px;
+    grid-template-rows: 50px;*/
+}
+
+#advert {
+    grid-area: advert;
+    justify-self: center;
+    align-self: center;
+}
+
+#business {
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+}
+
+#How-search {
+    grid-area: How-search;
+    justify-self: center;
+    align-self: center;
+}
+
+#privacy {
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+}
+
+#terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+}
+
+#sett {
+    grid-area: sett;
+    justify-self: center;
+    align-self: center;
+}
